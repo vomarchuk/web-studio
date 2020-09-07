@@ -1,0 +1,33 @@
+.button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button.primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  line-height: 30px;
+}
+.button.secondary {
+  line-height: 26px;
+  background-color: $bg-color;
+  color: $title-color;
+  &:hover,
+  &:focus,
+  &:visited,
+  &:active {
+    background-color: $accent-color;
+  }
+}

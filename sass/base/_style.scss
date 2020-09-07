@@ -1,0 +1,59 @@
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  color: $title-color;
+}
+header {
+  border-bottom: 1px solid #ececec;
+}
+@keyframes hover-efect {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.flexbox {
+  display: flex;
+}
+
+//hidden
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
