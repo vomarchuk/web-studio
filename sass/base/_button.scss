@@ -1,3 +1,22 @@
+//конпка мобильного меню
+.button-menu {
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  .icon-close {
+    display: none;
+  }
+}
+.button-menu.is-open .icon-close {
+  display: block;
+}
+.button-menu.is-open .icon-open {
+  display: none;
+}
+//
 .button {
   font-style: normal;
   font-weight: bold;
