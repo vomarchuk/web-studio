@@ -22,8 +22,51 @@
     color: #ffffff;
   }
   &-contacts {
+    margin-top: 8px;
     a {
+      display: block;
       color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      line-height: 24px;
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+    }
+  }
+  &-social {
+    margin-top: 60px;
+    .title {
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+  &-mail {
+    .title {
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+}
+
+.footer-social .icon-list {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    &:not(:first-child) {margin-left: 10px;}
+    .icon-soc {
+      fill: #ffffff;
     }
   }
 }

@@ -574,8 +574,71 @@ header {
   color: #ffffff;
 }
 
+.footer-contacts {
+  margin-top: 8px;
+}
+
 .footer-contacts a {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer-contacts a:not(:first-child) {
+  margin-top: 8px;
+}
+
+.footer-social {
+  margin-top: 60px;
+}
+
+.footer-social .title {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-mail .title {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-social .icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-social .icon-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social .icon-list li:not(:first-child) {
+  margin-left: 10px;
+}
+
+.footer-social .icon-list li .icon-soc {
+  fill: #ffffff;
 }
 
 .backdrop {
