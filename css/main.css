@@ -323,7 +323,7 @@ header {
   }
 }
 
-.page-header, .footer, .features {
+.page-header, .footer, .features, .team, .regulars {
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -459,12 +459,6 @@ header {
   height: 60px;
 }
 
-@media screen and (min-width: 480px) {
-  .page-header {
-    width: 480px;
-  }
-}
-
 .menu {
   display: none;
   padding-top: 60px;
@@ -562,12 +556,6 @@ header {
   padding-bottom: 60px;
   text-align: center;
   background: #2f303a;
-}
-
-@media screen and (min-width: 480px) {
-  .footer {
-    width: 480px;
-  }
 }
 
 .footer .logo {
@@ -687,7 +675,8 @@ header {
 }
 
 .features {
-  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -740,6 +729,159 @@ header {
   font-size: 14px;
   line-height: 24px;
   color: #757575;
+}
+
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
+  }
+}
+
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: #212121;
+}
+
+.team-card {
+  margin-top: 30px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card .team-img {
+  width: 100%;
+  height: auto;
+}
+
+.team-card .team-member-name {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #212121;
+}
+
+.team-card .team-prof {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #757575;
+}
+
+.icon-soc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 16px;
+}
+
+.icon-soc-list .icon-soc-item {
+  padding-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon-soc-list .icon-soc-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.icon-soc-list .icon-soc-item .item .icon {
+  fill: #afb1b8;
+}
+
+.regulars {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.regulars-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: #212121;
+}
+
+.regulars-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+.regulars-list .link {
+  width: calc((100% - 2 * 30px) / 2);
+  height: 90px;
+  margin: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.regulars-list .link .link-box {
+  position: relative;
+  border: 1px solid #afb1b8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  width: 210px;
+  height: 90px;
+  color: #afb1b8;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regulars-list .link .link-box:hover {
+  color: #2196f3;
+  border-color: #2196f3;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.regulars-list .link .link-box .icon-item {
+  fill: currentColor;
+}
+
+.regulars-list .link .link-box .icon-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .backdrop {

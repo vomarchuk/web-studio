@@ -1,25 +1,37 @@
-body {
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: block;
+}
+
+ul .list {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: tomato;
+  margin: 5px;
 }
 
-button {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  text-align: center;
-  outline: none;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: aqua;
-}
-
-button {
-  background-color: white;
-}
-
-button {
-  width: 200px;
-  height: 50px;
+@media screen and (min-width: 760px) {
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -5px;
+  }
+  ul .list {
+    width: calc((100% - 2 * 10px) / 2);
+    margin: 5px;
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=test.css.map */
