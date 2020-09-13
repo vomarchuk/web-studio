@@ -1,12 +1,17 @@
 .filters {
-  padding-top: 93px;
+  @extend %container;
+  padding-top: 60px;
+  padding-bottom: 40px;
   &-list {
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
   &-btn {
-    &:not(:first-child) {
-      margin-left: 8px;
-    }
+    margin: 8px;
+    // &:not(:first-child) {
+    //   margin-left: 8px;
+    // }
     .button {
       padding: 6px 22px;
       font-style: normal;

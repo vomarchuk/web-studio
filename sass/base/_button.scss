@@ -1,4 +1,9 @@
 //конпка мобильного меню
+.icon-close,
+.icon-open {
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .button-menu {
   cursor: pointer;
   display: inline-flex;
@@ -8,6 +13,11 @@
   background-color: transparent;
   .icon-close {
     display: none;
+  }
+  &:hover {
+    use {
+      fill: $accent-color;
+    }
   }
 }
 .button-menu.is-open .icon-close {

@@ -23,8 +23,11 @@ h3 {
   padding: 0;
   color: $title-color;
 }
-header {
-  border-bottom: 1px solid #ececec;
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 @keyframes hover-efect {
   0% {
@@ -37,21 +40,18 @@ header {
 }
 
 %container {
-  // width: 480px;
-
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 }
 
 .list {
   margin: 0;
   padding: 0;
-}
-
-.flexbox {
-  display: flex;
 }
 
 //hidden

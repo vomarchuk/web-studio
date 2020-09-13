@@ -1,3 +1,30 @@
+.hero {
+  @extend %container;
+  display: block;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 100%;
+  height: 400px;
+  background-image: url(/img/Hero-img-480.png);
+  background-repeat: no-repeat;
+  &-text {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+  &-btn {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+  }
+}
+
 // .hero {
 //   padding-top: 200px;
 //   padding-bottom: 200px;

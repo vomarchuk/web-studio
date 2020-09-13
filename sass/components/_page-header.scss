@@ -1,6 +1,8 @@
 .page-header {
   @extend %container;
   position: relative;
+  border-bottom: 1px solid #ececec;
+
   .nav {
     display: flex;
     align-items: center;
@@ -13,10 +15,13 @@
 }
 
 .menu {
+  // position: absolute;
   display: none;
+
   &.is-open {
     display: block;
   }
+
   padding-top: 60px;
   padding-bottom: 60px;
   position: absolute;
