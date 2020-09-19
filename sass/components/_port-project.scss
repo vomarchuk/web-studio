@@ -5,7 +5,7 @@
   .list {
     flex-wrap: wrap;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     .link {
       // width: 370px;
       // height: 404px;
@@ -87,6 +87,22 @@
       line-height: 30px;
 
       color: $text-color;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .project .list {
+    margin: -15px;
+    .link {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+  }
+}
+@media screen and (min-width: 1600px) {
+  .project .list {
+    .link {
+      width: calc((100% - 3 * 30px) / 3);
     }
   }
 }

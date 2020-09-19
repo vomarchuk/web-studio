@@ -1,53 +1,49 @@
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1599px) {
   .activity {
     display: none;
   }
 }
-// .activity {
-//   &-title {
-//     margin-top: 0;
-//     margin-bottom: 0;
-//     padding-top: 94px;
+.activity {
+  @extend %container;
+  &-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 94px;
 
-//     font-weight: bold;
-//     font-size: 36px;
-//     line-height: 42px;
-//     text-align: center;
-//   }
-//   &-list {
-//     margin-top: 50px;
-//     padding-bottom: 94px;
-//     .post {
-//       display: block;
-//       position: relative;
-//       width: 370px;
-//       height: 294px;
-//       .text {
-//         position: absolute;
-//         bottom: 0;
-//         margin-top: 0;
-//         margin-bottom: 0;
-//         padding-top: 27px;
-//         padding-bottom: 27px;
-//         width: 100%;
-//         font-weight: bold;
-//         font-size: 14px;
-//         line-height: 16px;
-//         text-align: center;
-//         text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+  }
+  &-list {
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 94px;
+    .post {
+      display: flex;
+      position: relative;
+      width: 370px;
+      height: 294px;
+      .text {
+        position: absolute;
+        bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        width: 100%;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
 
-//         background: rgba(47, 48, 58, 0.8);
-//         color: #ffffff;
-//       }
-//     }
-//     .post:not(:first-child) {
-//       margin-left: 30px;
-//     }
-//   }
-// }
-
-// .activity {
-//   @media screen and (max-width: 1199px) {
-//     display: none;
-//   }
-// }
+        background: rgba(47, 48, 58, 0.8);
+        color: #ffffff;
+      }
+    }
+    .post:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}

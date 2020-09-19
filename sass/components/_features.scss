@@ -2,21 +2,19 @@
   @extend %container;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and(min-width:480px) {
-    width: 480px;
-  }
 }
 
 .features .list-item {
-  &:not(:first-child) {
-    margin-top: 30px;
+  @media screen and(max-width:767px) {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
   }
+
   &::before {
     content: " ";
     display: block;
     height: 120px;
-    // width: 450px;
-    background-color: tomato;
     background-repeat: no-repeat;
     background-position: center;
     background-color: $bg-color;
@@ -53,5 +51,26 @@
     font-size: 14px;
     line-height: 24px;
     color: $text-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features .list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    &-item {
+      display: block;
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+  }
+  .features .title {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .features .list {
+    flex-wrap: nowrap;
   }
 }
